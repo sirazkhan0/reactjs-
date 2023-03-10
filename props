@@ -1,0 +1,27 @@
+import React from 'react'
+import Profile from './Profile'
+
+export default function App() {
+  return (
+    <div>
+      <Profile text={{name:"siraz"}} data="profile data"/>
+      <Profile text={{name:"fiayz"}} data="user data"/>
+     
+    </div>
+  )
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+import React from "react";
+function Profile(Props){
+    return(
+        <div>
+            <h1 className="text-center">{Props.text.name}</h1>
+            <h1>{Props.data}</h1>
+        </div>
+    )
+}
+
+export default Profile;
