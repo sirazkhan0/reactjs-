@@ -1,0 +1,21 @@
+#class based component
+
+import React from 'react'
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+
+
+
+#function based
+
+import React from 'react'
+export default function Profile() {
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  )
+}
